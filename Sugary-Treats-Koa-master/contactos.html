@@ -1,0 +1,203 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<link href="css/bootstrap.min.css" rel="stylesheet">
+<link href="css/bootstrap-custom.css" rel="stylesheet">
+<link href="css/stylecontact.css" rel="stylesheet">
+	
+	<meta name="Description" content="pagina de contacto de sugary treats para obtener informacion de direcciones o ponerse en contacto con nuestro sitio">
+	<meta name="Keywords" content="sugary, sugary treats, reposteria, bakery, cake, pasteles, galletas, cookies, stores, recetas, cafe">
+<title>contactos</title>
+</head>
+
+<body>
+	<header>
+
+
+<div class="container"> 
+		 
+		 
+		
+		<nav class="navbar navbar-expand-lg navbar-light bg-light">
+  <a class="navbar-brand" href="#"> <img src="img/logo.png" alt="logotipo sugary treats" class="img-fluid"></a>
+			
+  <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbar" aria-controls="navbar" aria-expanded="false" aria-label="Toggle navigation">
+    <span class="navbar-toggler-icon"></span>
+  </button>
+
+  <div class="collapse navbar-collapse" id="navbar">
+	  
+    <ul class="navbar-nav ml-auto">
+      <li class="nav-item">
+        <a class="nav-link" href="index.html">Inicio<span class="sr-only">(current)</span></a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Quienes Somos</a>
+      </li>
+      <li class="nav-item">
+        <a class="nav-link" href="#">Productos</a>
+      </li>
+      
+		
+		<li class="nav-item">
+        <a class="nav-link" href="#">Tienda</a>
+      </li>
+      
+      <li class="nav-item active">
+        <a class="nav-link" href="contactos.html">Contactos</a>
+      </li>
+		
+    
+    </ul>
+
+  </div>
+</nav>
+		 </div>
+
+
+
+
+
+
+
+
+
+<hr class="bar-rosa">
+
+</header>
+	
+	<section id="sec-contactos">
+	<div class="container">
+		<h1>Contactos</h1>
+		
+		</div>
+	
+	</section>
+	
+	<section id="sec-map">
+		<div class="container">s
+		<div id="map"></div>
+		</div>
+	
+	</section>
+	
+	
+	<section>
+	<section id="sec-iconos">
+	<div class="container">
+	
+	<div class="row">
+	
+      	<article class="col-md-4 col-sm-4 col-sx-12">
+    	<div class="marco">
+    	<div class="overlay">
+        	
+    	<a href="#"><img src="img/tel.png" alt="telefono" width="150" height="116" class="img-fluid">
+    	
+    	<div class="bg-overlay"></div>
+    	</a>
+			
+    	
+        </div>
+       	</div>
+    	<h3 class="titulo">Teléfono</h3>
+      	</article>
+    	
+    	<article class="col-md-4 col-sm-4 col-sx-12">
+    	<div class="marco">
+    	<div class="overlay">
+			<a href="#"><img src="img/email.png" alt="email" width="150" class="img-fluid">
+   		<div class="bg-overlay"></div>
+   		</a>
+			</div>	
+    	</div>
+    	<h3 class="titulo">Correo</h3>
+    	</article>
+    	
+    	<article class="col-md-4 col-sm-4 col-sx-12">
+    	<div class="marco">
+    	<div class="overlay">    	
+    	
+    	<a href="#"><img src="img/fax.png" alt="fax" width="150" class="img-fluid">
+    	<div class="bg-overlay"></div>
+    	</a>
+    	
+    	
+    		
+    	</div>
+	
+    	</div>
+    	<h3 class="titulo">Fax</h3>
+    	</article>
+    	
+    	
+    	
+    	
+    
+	</div>
+	</div>
+	
+	
+</section>
+	
+	
+	</section>
+	
+	<footer>
+		<div class="container-fluid">
+		
+		
+	
+			
+			<p class="nombre">Diseño Web I - All Rights Reserved</p>
+			<img src="img/Facebook.png" alt="facebook" width="60" height="60" class="img-fluid rounded-circle">
+			<img src="img/Instagram.png" alt="instagram" width="60" height="60" class="img-fluid rounded-circle">
+			<img src="img/Twitter.png" alt="twitter" width="60" height="60" class="img-fluid rounded-circle">
+			<img src="img/Google+.png" alt="google+" width="60" height="60" class="img-fluid rounded-circle">
+			
+					
+		
+		</div>
+		
+		
+	</footer>
+	
+		<script src="js/jquery.min.js"></script>
+		<script src="js/bootstrap.min.js"></script>
+		<script src="https://maps.googleapis.com/maps/api/js?v=3.exp&signed_in=false"></script>
+		<script src="js/gmaps.js"></script>
+<script>
+$(function () {
+	
+	$(window).load(function(){
+		mostrarMapa();
+	});
+
+	function mostrarMapa(){
+		var map;
+		var mLat = 14.101124; //latitud
+		var mLng = -87.182758; //longitud
+
+		map = new GMaps({
+			div: '#map', //id del <div> donde se mostrará el mapa.
+			lat: mLat,
+			lng: mLng,
+			zoom: 18
+		  });
+		map.addMarker({
+		  lat: mLat,
+		  lng: mLng,
+		  title: 'Nuestra ubicación en gMaps',
+		  infoWindow: {
+			content: '<p>Edificio Torre Morazán</p>'
+		  }
+		});	
+		
+	}
+});
+</script>
+	
+</body>
+</html>
